@@ -23,7 +23,7 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
   if (error) return <Error error={error} />;
   if (loading) return <Loading />
   // console.log(data)
-  if (data == 0 && data != null) return (<Info info='Vamos postar algumas fotos?! 👻' />)
+  if (data == 0 && data != null && user) return (<Info info='Vamos postar algumas fotos?! 👻' />)
   if (data) {
     return (
       <ul className={`${styles.feed} animeLeft`}>
