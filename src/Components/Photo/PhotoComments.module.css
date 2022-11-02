@@ -1,0 +1,25 @@
+.comments {
+  overflow-y: scroll;
+  word-break: break-word; /* Quebra de texto caso esteja maior que a div */
+  padding: 0 2rem;
+  height: auto;
+}
+
+/*Sempre que estiver no mesmo elemento deve-se juntar as classes*/
+.single.comments {
+  padding: 0px;
+}
+
+.comments li {
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+
+@media (max-width: 64rem) {
+  .comments {
+    height: 2rem;
+  }
+  .single.comments {
+    margin-left: 1rem;
+  }
+}
