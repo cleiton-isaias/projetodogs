@@ -27,7 +27,7 @@ const LoginForm = () => {
       <h1 className='title'>Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="Usuário" type='text' name='username' {...username} />
-        <Input label="Senha" type='current-password' name='current-password' {...password} />
+        <Input label="Senha" type='password' name='password' {...password} />
         {loading ? (<Button disabled>Carregando...</Button>) :
           (<Button >Entrar</Button>)}
         <Error error={error && 'Dados incorretos.'} />
